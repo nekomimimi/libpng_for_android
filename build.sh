@@ -45,7 +45,7 @@ for (( i=0; i<targets_length; i++ )); do
     export CXX=$TOOLCHAIN/bin/$target$API-clang++
     export AS=$CC
 
-    ./configure --host=$target
+    ./configure --host=$target  --with-pic
     make clean
     make
     
